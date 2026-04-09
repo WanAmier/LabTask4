@@ -17,7 +17,7 @@
         <div class="ptss-ad-grid">
             <div class="ptss-ad-card">
                 <div class="ptss-img-container">
-                    <img src="pkg-tour.jpg" class="ptss-ad-img" alt="Campus Tour">
+                    <img src="pkg-tour.png" class="ptss-ad-img" alt="Campus Tour">
                 </div>
                 <div class="ptss-ad-content">
                     <div class="ptss-pkg-header">
@@ -34,7 +34,7 @@
 
             <div class="ptss-ad-card">
                 <div class="ptss-img-container">
-                    <img src="pkg-gallery.jpg" class="ptss-ad-img" alt="Innovation Gallery">
+                    <img src="pkg-gallery.npg" class="ptss-ad-img" alt="Innovation Gallery">
                 </div>
                 <div class="ptss-ad-content">
                     <div class="ptss-pkg-header">
@@ -51,7 +51,7 @@
 
             <div class="ptss-ad-card">
                 <div class="ptss-img-container">
-                    <img src="pkg-courses.jpg" class="ptss-ad-img" alt="Professional Courses">
+                    <img src="pkg-courses.png" class="ptss-ad-img" alt="Professional Courses">
                 </div>
                 <div class="ptss-ad-content">
                     <div class="ptss-pkg-header">
@@ -68,7 +68,7 @@
 
             <div class="ptss-ad-card">
                 <div class="ptss-img-container">
-                    <img src="pkg-guest.jpg" class="ptss-ad-img" alt="Guest House">
+                    <img src="pkg-guest.png" class="ptss-ad-img" alt="Guest House">
                 </div>
                 <div class="ptss-ad-content">
                     <div class="ptss-pkg-header">
