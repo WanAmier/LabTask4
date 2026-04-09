@@ -1,0 +1,16 @@
+.ptss-body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #f0f2f5; margin: 0; padding: 20px; }
+.ptss-card { max-width: 800px; margin: 20px auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.ptss-title { color: #1a1a1a; border-bottom: 3px solid #0056b3; padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
+.ptss-form-group { margin-bottom: 20px; }
+.ptss-label { display: block; font-weight: 600; margin-bottom: 8px; color: #444; }
+.ptss-input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+.ptss-error { color: #d93025; font-size: 0.85rem; margin-top: 5px; font-weight: 500; }
+.ptss-btn { display: inline-block; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; cursor: pointer; text-align: center; border: none; font-size: 14px; }
+.ptss-btn-primary { background-color: #0056b3; color: white; }
+.ptss-btn-success { background-color: #28a745; color: white; }
+.ptss-btn-warning { background-color: #f4b400; color: #fff; }
+.ptss-btn-danger { background-color: #d93025; color: white; }
+.ptss-table { width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 20px; border: 1px solid #eee; border-radius: 8px; overflow: hidden; }
+.ptss-th { background-color: #f8f9fa; color: #333; padding: 15px; text-align: left; border-bottom: 2px solid #eee; }
+.ptss-td { padding: 15px; border-bottom: 1px solid #eee; color: #555; }
+.ptss-data-view { background: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 5px solid #0056b3; white-space: pre-wrap; font-family: monospace; }
