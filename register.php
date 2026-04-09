@@ -1,16 +1,11 @@
 <?php
 $errors = [];
-$fields = ['name', 'ic', 'institution', 'package', 'date', 'contact', 'email', 'gender', 'address', 'remarks'];
+$fields = ['name', 'ic', 'institution', 'date', 'contact', 'email', 'gender', 'address', 'remarks'];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $data = [];
-    foreach ($fields as $field) {
-        if (empty($_POST[$field])) {
-            $errors[$field] = "This field is required";
-        } else {
-            $data[$field] = $_POST[$field];
-        }
-    }
+    $data = $_POST;
+    if (empty($data['package'])) $errors['package'] = "Selection required";
+    foreach ($fields as $f) { if (empty($data[$f])) $errors[$f] = "Required"; }
 
     if (empty($errors)) {
         if (!is_dir('registrations')) { mkdir('registrations'); }
@@ -30,8 +25,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head><link rel="stylesheet" href="style.css"></head>
 <body>
     <div class="ptss-card">
-        <h2 class="ptss-title">Visit PTSS 2026 Registration</h2>
+        <h2 class="ptss-title">Package Booking</h2>
         <form method="POST">
+            <div class="ptss-form-group">
+                <label class="ptss-label">Selected Package</label>
+                <select name="package" class="ptss-input">
+                    <option value="">-- Select a Package --</option>
+                    <option>Campus Discovery Tour</option>
+                    <option>Innovation Gallery Visit</option>
+                    <option>Short Professional Courses</option>
+                    <option>Guest House Stay</option>
+                </select>
+            </div>
+            
             <?php foreach ($fields as $f): ?>
             <div class="ptss-form-group">
                 <label class="ptss-label"><?php echo ucfirst($f); ?></label>
@@ -39,8 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="ptss-error"><?php echo $errors[$f] ?? ''; ?></div>
             </div>
             <?php endforeach; ?>
-            <button type="submit" class="ptss-btn ptss-btn-success">Register Now</button>
-            <a href="list.php" class="ptss-btn ptss-btn-primary">View Records</a>
+
+            <button type="submit" class="ptss-btn ptss-btn-success">Confirm Booking</button>
+            <a href="index.php" class="ptss-btn ptss-btn-primary">Back Home</a>
         </form>
     </div>
 </body>
